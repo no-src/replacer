@@ -1,0 +1,14 @@
+name: the configuration of replacer
+version: v0.0.1
+items:
+  - name: replace domain
+    paths:
+      - "*/test.yaml"
+    rules:
+      - old:
+          - 127.0.0.1:8888
+          - 127.0.0.1:9999
+        new:
+          test: test-github.com
+          uat: uat-github.com
+          product: product-github.com
