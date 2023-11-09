@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/github/license/no-src/replacer)](https://github.com/no-src/replacer/blob/main/LICENSE)
 [![Go Reference](https://pkg.go.dev/badge/github.com/no-src/replacer.svg)](https://pkg.go.dev/github.com/no-src/replacer)
 [![Go Report Card](https://goreportcard.com/badge/github.com/no-src/replacer)](https://goreportcard.com/report/github.com/no-src/replacer)
-[![codecov](https://codecov.io/gh/no-src/replacer/branch/main/graph/badge.svg?token=BTPKR8G6QI)](https://codecov.io/gh/no-src/replacer)
+[![codecov](https://codecov.io/gh/no-src/replacer/graph/badge.svg?token=aJZPSpxpK7)](https://codecov.io/gh/no-src/replacer)
 [![Release](https://img.shields.io/github/v/release/no-src/replacer)](https://github.com/no-src/replacer/releases)
 
 The replacer is a configuration-based file replace tool.
