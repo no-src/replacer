@@ -5,7 +5,9 @@ import (
 	"github.com/no-src/log/level"
 	"github.com/no-src/nsgo/httputil"
 	"github.com/no-src/replacer"
+	"github.com/no-src/replacer/internal/about"
 	"github.com/no-src/replacer/internal/logger"
+	"github.com/no-src/replacer/internal/version"
 )
 
 // RunWithFlags start the replacer with built-in flags
@@ -18,6 +20,17 @@ func Run(conf, configUrl, root, tag, logDir string, logLevel int, revert bool) e
 	if err := logger.InitLogger("replacer", logDir, level.Level(logLevel)); err != nil {
 		return err
 	}
+
+	if PrintVersion {
+		version.PrintVersion("replacer", log.Log)
+		return nil
+	}
+
+	if PrintAbout {
+		about.PrintAbout(log.Log)
+		return nil
+	}
+
 	if len(configUrl) > 0 {
 		client, err := httputil.NewHttpClient(true, "", false)
 		if err != nil {

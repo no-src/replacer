@@ -7,13 +7,15 @@ import (
 )
 
 var (
-	ConfigFile string
-	ConfigUrl  string
-	Root       string
-	Tag        string
-	LogDir     string
-	LogLevel   int
-	Revert     bool
+	ConfigFile   string
+	ConfigUrl    string
+	Root         string
+	Tag          string
+	LogDir       string
+	LogLevel     int
+	Revert       bool
+	PrintVersion bool
+	PrintAbout   bool
 )
 
 // InitFlags init built-in flags
@@ -25,5 +27,7 @@ func InitFlags() {
 	flag.StringVar(&LogDir, "log_dir", "./logs", "log directory")
 	flag.IntVar(&LogLevel, "log_level", int(level.DebugLevel), "log level")
 	flag.BoolVar(&Revert, "revert", false, "revert the replace operations")
+	flag.BoolVar(&PrintVersion, "v", false, "print the version info")
+	flag.BoolVar(&PrintAbout, "about", false, "print the about info")
 	flag.Parse()
 }
