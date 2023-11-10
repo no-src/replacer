@@ -97,4 +97,4 @@ build_release
 # reset commit file
 echo -e "\c" >internal/version/commit
 
-ls -alh | grep ${SOFT_PREFIX}
+ls -alh | grep "${SOFT_PREFIX}go"
