@@ -4,5 +4,5 @@ package conf
 type Conf struct {
 	Name    string `yaml:"name"`
 	Version string `yaml:"version"`
-	Items   []Item `json:"items"`
+	Items   []Item `yaml:"items"`
 }
