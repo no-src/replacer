@@ -18,6 +18,21 @@ command to install `replacer`.
 go install github.com/no-src/replacer/...@latest
 ```
 
+### Run In Docker
+
+You can use the [build-docker.sh](/scripts/build-docker.sh) script to build the docker image and you should clone this
+repository and `cd` to the root path of the repository first.
+
+```bash
+$ ./scripts/build-docker.sh
+```
+
+Or pull the docker image directly from [DockerHub](https://hub.docker.com/r/nosrc/replacer) with the command below.
+
+```bash
+$ docker pull nosrc/replacer
+```
+
 ## Quick Start
 
 Create a config file named `replacer.yaml`, content is as follows
