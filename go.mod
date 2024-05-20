@@ -3,7 +3,7 @@ module github.com/no-src/replacer
 go 1.21
 
 require (
-	github.com/no-src/log v0.3.1
+	github.com/no-src/log v0.3.2
 	github.com/no-src/nsgo v0.0.3
 )
 
